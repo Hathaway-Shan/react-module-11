@@ -2,7 +2,7 @@ import { createContext, useState } from 'react';
 
 const CardContext = createContext();
 
-const UserProvider = ({ children }) => {
+const GameProvider = ({ children }) => {
   const [player, setPlayer] = useState(player);
   const [card, setCard] = useState(card);
   const [from, setFrom] = useState(from);
@@ -17,4 +17,4 @@ const UserProvider = ({ children }) => {
   );
 };
 
-export { UserProvider, CardContext };
+export { GameProvider, CardContext };
