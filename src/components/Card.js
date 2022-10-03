@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GameContext } from './context/CardContext';
 
 const suitMap = {
   hearts: '❤️',
@@ -8,7 +9,8 @@ const suitMap = {
 };
 
 //get rid of all of this and replace it with context
-export default function Card({ card, selectedCard, setSelectedCard, setFrom, player }) {
+export default function Card({ card, player }) {
+  const { selectedCard, setSelectedCard, setFrom } = useContext(GameContext);
   function handleCardClick() {
     setFrom(player);
     setSelectedCard(card);
