@@ -1,4 +1,5 @@
 import React from 'react';
+import { CardContext } from './context/CardContext';
 
 const suitMap = {
   hearts: '❤️',
