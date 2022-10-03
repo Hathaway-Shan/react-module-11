@@ -3,6 +3,7 @@ import initialCards from '../../cards-data';
 const GameContext = createContext();
 
 const GameProvider = ({ children }) => {
+  //state for card data and player hands
   const [deck, setDeck] = useState(initialCards);
   const [playerOneHand, setPlayerOneHand] = useState([]);
   const [playerTwoHand, setPlayerTwoHand] = useState([]);
