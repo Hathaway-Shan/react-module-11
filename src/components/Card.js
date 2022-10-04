@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { GameContext } from './context/CardContext';
+import { GameContext } from '../../src/context/CardContext';
 
 const suitMap = {
   hearts: '❤️',

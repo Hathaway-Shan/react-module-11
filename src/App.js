@@ -3,7 +3,7 @@ import Player from './components/Player';
 import CardList from './components/CardList';
 import { useContext } from 'react';
 import ExecutePassButton from './components/ExecutePassButton';
-import { GameContext } from './components/context/CardContext';
+import { GameContext } from '../src/context/CardContext';
 
 function App() {
   const {

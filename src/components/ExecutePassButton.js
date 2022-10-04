@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Card from './Card';
-import { GameContext } from './context/CardContext';
+import { GameContext } from '../../src/context/CardContext';
 
 export default function ExecutePassButton({ passCard }) {
   const { from, setFrom, to, selectedCard, setSelectedCard } = useContext(GameContext);
